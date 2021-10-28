@@ -6,7 +6,6 @@ export const errorHandler = (
   res: Response,
   next: NextFunction
 ) => {
-  console.log('123');
   if (res.headersSent) {
     return next(err);
   }
